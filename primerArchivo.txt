@@ -1,0 +1,74 @@
+PASOS PARA EL PROYECTO DE GIT.
+
+
+👉 1. Creo un repositorio local:
+
+🧩 Creo una carpeta con el nombre del repositorio: $ mkdir lemoncodeGit
+
+🧩 Entro en el repositorio: $ cd lemoncodeGit
+
+🧩 inicializo git con: $ git init
+
+
+👉 2. Creo un repositorio en mi cuenta de GitHub:
+
+🧩 Creo un repositorio en GitHub y copio mi clave ssh.
+    (el repositorio es privado y no incluye readme.md ni .gitignore).
+
+🧩 En la terminal de git GitBash de VS Code conecto mi repositorio remoto:
+    $ git remote add origin git@github.com:usuario/nombre-repositorio.git
+
+🧩 Confirmo que se estableció bien la conexión con: git remote -v
+    $ git remote -v
+    origin  git@github.com:usuario/nombre-repositorio.git (fetch)
+    origin  git@github.com:usuario/nombre-repositorio.git (push)
+
+
+👉 3. Hacer un commit y un push:
+
+🧩 Creo un archivo en mi repositorio local con: $ touch primerArchivo.txt
+
+🧩 Verifico con: ⚪ $ ls ⚪ que en mi repositorio se encuentra el archivo creado.
+
+🧩 Añado el archivo al staging con: git add primerArchivo.txt
+
+🧩 Utilizo: ⚪ $ git status ⚪ para verificar que se encuentra en el área de staging:
+    $ git status
+    On branch master
+
+    No commits yet
+
+    Changes to be committed:
+      (use "git rm --cached <file>..." to unstage)
+            new file:   primerArchivo.txt
+
+🧩 Realizo un commit: git commit: ⚪ $ git commit -m "Primer commit: de primerArchivo.txt" ⚪
+
+🧩 Verifico que el commit se haya realizado con éxito:
+    $ git status
+    On branch master
+    nothing to commit, working tree clean
+
+🧩 Subo los cambios realizados en mi repositorio local a GitHub: git push -u origin master
+
+🧩 Compruebo que se ha subido al repositorio remoto desde la terminal de Git Bash:
+    ⚪ $ git log origin/master
+    commit 48593h4958g4857j573j47384j5748f5748f84k (HEAD -> master, origin/master)
+    Author: usuario <tu-email@gmail.com>
+    Date:   Thu Oct 10 10:00:14 2025 +0200
+
+
+👉 4. Creo una rama en mi repositorio local: 
+
+🧩 Creo una rama con: ⚪ $git switch -c development
+    $ git switch -c development
+    Switched to a new branch 'development'
+
+🧩 Verifico que la rama ha sido creada:
+    $ git branch
+    * development
+      master
+
+🧩 Cambiarme a la rama "development":
+    Como ya he cambiado a la nueva rama utilizando $ git switch
+    no hace falta utilizar ⚪ $ git checkout development
