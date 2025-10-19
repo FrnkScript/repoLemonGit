@@ -17,11 +17,11 @@ cambios desde un repositorio local a GitHub, así como la creación y manejo de 
 
 ### 🧩 Creo un repositorio en GitHub y copio mi clave ssh.
 
-        - [x] (el repositorio es privado y no incluye readme.md ni .gitignore).
+        ⚪ (el repositorio es privado y no incluye readme.md ni .gitignore).
 
 ### 🧩 En la terminal de git GitBash de VS Code conecto mi repositorio remoto:
 
-        ` $ git remote add origin git@github.com:FrnkScript/repoLemonGit.git `
+        ⚪ ` $ git remote add origin git@github.com:FrnkScript/repoLemonGit.git `
 
 ### 🧩 Confirmo que se estableció bien la conexión con: git remote -v
 
@@ -37,7 +37,7 @@ cambios desde un repositorio local a GitHub, así como la creación y manejo de 
 
 ### 🧩 Verifico con: ⚪ $ ls ⚪ que en mi repositorio se encuentra el archivo creado.
 
-### 🧩 Añado el archivo al staging con: git add primerArchivo.txt
+### 🧩 Añado el archivo al staging con: `git add primerArchivo.txt`
 
 ### 🧩 Utilizo: ⚪ $ git status ⚪ para verificar que se encuentra en el área de staging:
 
@@ -52,7 +52,9 @@ cambios desde un repositorio local a GitHub, así como la creación y manejo de 
                 new file:   primerArchivo.txt
         ```
 
-### 🧩 Realizo un commit: git commit: ⚪ $ git commit -m "Primer commit: de primerArchivo.txt" ⚪
+### 🧩 Realizo un commit:
+
+        ⚪ ` $ git commit -m "Primer commit: de primerArchivo.txt" `
 
 ### 🧩 Verifico que el commit se haya realizado con éxito:
 
@@ -70,7 +72,7 @@ cambios desde un repositorio local a GitHub, así como la creación y manejo de 
 
 ## 👉 4. Creo una rama en mi repositorio local:
 
-### 🧩 Creo una rama con: ⚪ $git switch -c development
+### 🧩 Creo una rama con: ⚪ $git switch -c development ⚪
 
         ```
         $ git switch -c development
@@ -87,35 +89,35 @@ cambios desde un repositorio local a GitHub, así como la creación y manejo de 
 
 ### 🧩 Cambiarme a la rama "development":
 
-        - [x] Como ya he cambiado a la nueva rama utilizando $ git switch no hace falta utilizar:
-        - [x]  ⚪ ` $ git checkout development `
+        ⚪ Como ya he cambiado a la nueva rama utilizando $ git switch no hace falta utilizar:
+        ⚪ ` $ git checkout development `
 
 ### 🧩 Realizo algunos cambios en el archivo:
 
-        - [x] He añadido la información de los pasos que he realizado hasta el momento en el archivo "primerArchivo.txt"
+        ⚪ He añadido la información de los pasos que he realizado hasta el momento en el archivo "primerArchivo.txt"
 
 ### 🧩 Hago un commit de primerArchivo.txt en la rama "development":
 
-        ` $ git commit -m "añado documentacion de los pasos del proyecto hasta el punto 4" `
+        ⚪ ` $ git commit -m "añado documentacion de los pasos del proyecto hasta el punto 4" `
 
 ### 🧩 Comprueba que se haya hecho bien el commit: $ git status
 
 ### 🧩 Subo los cambios a mi cuenta de GitHub: $ git push --set-upstream origin development
 
-        - [x] En GitHub me pide que haga un "Compare & Pull Request" en mi repositorio remoto.
-        - [x] Dejo el mismo comentario y hago clic en "Create pull Request"
+        ⚪ En GitHub me pide que haga un "Compare & Pull Request" en mi repositorio remoto.
+        ⚪ Dejo el mismo comentario y hago clic en "Create pull Request"
 
 ## 👉 5. Hacer un merge:
 
 ### 🧩 Vuelvo a mi rama principal de mi repositorio local:
 
-        ` $ git switch master `
+        ⚪ ` $ git switch master `
 
 ### 🧩 Actualizo mi repositorio remoto con mi local con:
 
-        ` $ git pull origin master `
+        ⚪ ` $ git pull origin master `
 
-        - [x] Y me informa de que está todo correcto:
+        ⚪ Y me informa de que está todo correcto:
         ```
         From github.com:FrnkS..../repoLemonGit
         * branch            master     -> FETCH_HEAD
@@ -134,7 +136,7 @@ cambios desde un repositorio local a GitHub, así como la creación y manejo de 
 
 ### 🧩 Como no hay conflictos, hago un "git push -u origin master":
 
-        - [x] Me muestra un mensaje de que todo ha ido bien.
+        ⚪ Me muestra un mensaje de que todo ha ido bien.
           ` branch 'master' set up to track 'origin/master'. `
 
 ## 🍪🍵
